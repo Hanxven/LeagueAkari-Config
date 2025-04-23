@@ -1,0 +1,149 @@
+{
+  "version": 10,
+  "servers": {
+    "TENCENT_HN1": {
+      "name": "艾欧尼亚",
+      "matchHistory": "https://hn1-k8s-sgp.lol.qq.com:21019",
+      "common": "https://hn1-k8s-sgp.lol.qq.com:21019"
+    },
+    "TENCENT_HN10": {
+      "name": "黑色玫瑰",
+      "matchHistory": "https://hn10-k8s-sgp.lol.qq.com:21019",
+      "common": "https://hn10-k8s-sgp.lol.qq.com:21019"
+    },
+    "TENCENT_TJ100": {
+      "name": "联盟四区",
+      "matchHistory": "https://tj100-sgp.lol.qq.com:21019",
+      "common": "https://tj100-sgp.lol.qq.com:21019"
+    },
+    "TENCENT_TJ101": {
+      "name": "联盟五区",
+      "matchHistory": "https://tj101-sgp.lol.qq.com:21019",
+      "common": "https://tj101-sgp.lol.qq.com:21019"
+    },
+    "TENCENT_NJ100": {
+      "name": "联盟一区",
+      "matchHistory": "https://nj100-sgp.lol.qq.com:21019",
+      "common": "https://nj100-sgp.lol.qq.com:21019"
+    },
+    "TENCENT_GZ100": {
+      "name": "联盟二区",
+      "matchHistory": "https://gz100-sgp.lol.qq.com:21019",
+      "common": "https://gz100-sgp.lol.qq.com:21019"
+    },
+    "TENCENT_CQ100": {
+      "name": "联盟三区",
+      "matchHistory": "https://cq100-sgp.lol.qq.com:21019",
+      "common": "https://cq100-sgp.lol.qq.com:21019"
+    },
+    "TENCENT_BGP2": {
+      "name": "峡谷之巅",
+      "matchHistory": "https://bgp2-k8s-sgp.lol.qq.com:21019",
+      "common": "https://bgp2-k8s-sgp.lol.qq.com:21019"
+    },
+    "TENCENT_PBE": {
+      "name": "体验服",
+      "matchHistory": "https://pbe-sgp.lol.qq.com:21019",
+      "common": "https://pbe-sgp.lol.qq.com:21019"
+    },
+    "TW2": {
+      "name": "台湾",
+      "common": "https://tw2-red.lol.sgp.pvp.net",
+      "matchHistory": "https://apse1-red.pp.sgp.pvp.net"
+    },
+    "SG2": {
+      "name": "新加坡",
+      "common": "https://sg2-red.lol.sgp.pvp.net",
+      "matchHistory": "https://apse1-red.pp.sgp.pvp.net"
+    },
+    "PH2": {
+      "name": "菲律宾",
+      "matchHistory": "https://apse1-red.pp.sgp.pvp.net",
+      "common": "https://ph2-red.lol.sgp.pvp.net"
+    },
+    "VN2": {
+      "name": "越南",
+      "matchHistory": "https://apse1-red.pp.sgp.pvp.net",
+      "common": "https://vn2-red.lol.sgp.pvp.net"
+    },
+    "PBE": {
+      "name": "PBE",
+      "matchHistory": "https://usw2-red.pp.sgp.pvp.net",
+      "common": "https://pbe-red.lol.sgp.pvp.net"
+    },
+    "EUW": {
+      "name": "EUW",
+      "matchHistory": "https://euc1-red.pp.sgp.pvp.net",
+      "common": "https://euw-red.lol.sgp.pvp.net"
+    }
+  },
+  "tencentServerMatchHistoryInteroperability": [
+    "TENCENT_HN1",
+    "TENCENT_HN10",
+    "TENCENT_NJ100",
+    "TENCENT_GZ100",
+    "TENCENT_CQ100",
+    "TENCENT_TJ100",
+    "TENCENT_TJ101",
+    "TENCENT_BGP2",
+    "TENCENT_PBE"
+  ],
+  "tencentServerSpectatorInteroperability": [
+    "TENCENT_HN1",
+    "TENCENT_HN10",
+    "TENCENT_NJ100",
+    "TENCENT_GZ100",
+    "TENCENT_CQ100",
+    "TENCENT_TJ100",
+    "TENCENT_TJ101",
+    "TENCENT_BGP2",
+    "TENCENT_PBE"
+  ],
+  "tencentServerSummonerInteroperability": [
+    "TENCENT_HN1",
+    "TENCENT_HN10",
+    "TENCENT_NJ100",
+    "TENCENT_GZ100",
+    "TENCENT_CQ100",
+    "TENCENT_TJ100",
+    "TENCENT_TJ101",
+    "TENCENT_BGP2",
+    "TENCENT_PBE"
+  ],
+  "serverNames": {
+    "en": {
+      "TENCENT_HN1": "Ionia",
+      "TENCENT_HN10": "Black Rose",
+      "TENCENT_TJ100": "League 4",
+      "TENCENT_TJ101": "League 5",
+      "TENCENT_NJ100": "League 1",
+      "TENCENT_GZ100": "League 2",
+      "TENCENT_CQ100": "League 3",
+      "TENCENT_BGP2": "Rift's Summit",
+      "TENCENT_PBE": "PBE (Tencent)",
+      "TW2": "Taiwan",
+      "SG2": "Singapore",
+      "PH2": "Philippines",
+      "VN2": "Vietnam",
+      "PBE": "PBE",
+      "EUW": "EUW"
+    },
+    "zh-CN": {
+      "TENCENT_HN1": "艾欧尼亚",
+      "TENCENT_HN10": "黑色玫瑰",
+      "TENCENT_TJ100": "联盟四区",
+      "TENCENT_TJ101": "联盟五区",
+      "TENCENT_NJ100": "联盟一区",
+      "TENCENT_GZ100": "联盟二区",
+      "TENCENT_CQ100": "联盟三区",
+      "TENCENT_BGP2": "峡谷之巅",
+      "TENCENT_PBE": "PBE (腾讯)",
+      "TW2": "台湾",
+      "SG2": "新加坡",
+      "PH2": "菲律宾",
+      "VN2": "越南",
+      "PBE": "PBE",
+      "EUW": "EUW"
+    }
+  }
+}
