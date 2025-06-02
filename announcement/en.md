@@ -1,3 +1,7 @@
+What you see is the announcement content for testing, it will try various markdown elements to test the rendering effect.
+
+---
+
 # ✨《Rabi and Ribi's Chaotic Isekai Adventure》✨
 
 ## 🌀 Chapter 1: The Sudden Portal Accident
