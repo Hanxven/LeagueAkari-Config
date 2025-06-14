@@ -140,7 +140,7 @@ Scene.create(world)
 ## 长文本 + HTML
 
 <style>
-  section.genshin-quotes {
+  [data-scope="genshin"] {
     font-family: 'Segoe UI', sans-serif;
     background-color: #1e1e1e;
     color: #d4d4d4;
@@ -148,35 +148,35 @@ Scene.create(world)
     border-radius: 12px;
     line-height: 1.8;
   }
-  .quote-card {
+  [data-scope="genshin"] .quote-card {
     border: 1px solid #333;
     background: #2c2c2c;
     padding: 1em;
     margin-bottom: 1.5em;
     border-radius: 8px;
   }
-  .character-name {
+  [data-scope="genshin"] .character-name {
     color: #82aaff;
     font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 0.5em;
   }
-  blockquote {
+  [data-scope="genshin"] blockquote {
     margin: 0;
     padding-left: 1em;
     border-left: 3px solid #555;
     font-style: italic;
   }
-  .element-anemo { color: #56c7c7; }
-  .element-pyro { color: #ff6b6b; }
-  .element-cryo { color: #6bcfff; }
-  .element-electro { color: #d085ff; }
-  .element-geo { color: #f2c97d; }
-  .element-hydro { color: #67d5e3; }
-  .element-dendro { color: #a5d66a; }
+  [data-scope="genshin"] .element-anemo { color: #56c7c7; }
+  [data-scope="genshin"] .element-pyro { color: #ff6b6b; }
+  [data-scope="genshin"] .element-cryo { color: #6bcfff; }
+  [data-scope="genshin"] .element-electro { color: #d085ff; }
+  [data-scope="genshin"] .element-geo { color: #f2c97d; }
+  [data-scope="genshin"] .element-hydro { color: #67d5e3; }
+  [data-scope="genshin"] .element-dendro { color: #a5d66a; }
 </style>
 
-<section class="genshin-quotes">
+<section data-scope="genshin">
 
 <div class="quote-card">
   <div class="character-name element-electro">雷电将军（Raiden Shogun）</div>
