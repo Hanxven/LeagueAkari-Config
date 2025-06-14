@@ -1,83 +1,245 @@
-你所看到的是用于测试的公告渲染内容，它将尝试各种 Markdown 元素，以测试渲染效果。
+# Part 1：常规公告
 
----
+### 千万注意！
 
-# ✨《Rabi 与 Ribi の异世界大混乱》✨
+在设置生涯背景时，如果选择了**卡莎**的**联盟不朽 卡莎**，请勿选择 `6b817ce1-aac3-....` 开头的装饰，这会造成游戏客户端无限重启！
 
-## 🌀 第一章：突如其来的传送门事故
+![IMG](https://cdn.jsdelivr.net/gh/LeagueAkari/LeagueAkari-Config@main/assets/20250614/cbffa9c7-0a4f-4c76-915b-9e2388f557bb.png)
 
-「Ribi ちゃん！快看这个奇怪的按钮！」<div style="text-align:center"><button disabled>DO NOT PRESS</button></div>
+#### 番外篇：我已经无限重启了怎么办？
 
-> **Ribi 推了推反光的眼镜**："Rabi 你这个笨蛋！这种明显写着【不要按】的按钮不就是专门用来按的吗？！"
+请在客户端启动时的短时间内立即将生涯背景设置成随便一个正常的皮肤即可，要快！
 
-突然**整个实验室开始剧烈震动**，一个彩虹色的传送门将两人吞噬！
+### 阿卡日
 
----
+QQ Group：[301157623](https://qm.qq.com/q/F1Xv85etlm) (Passcode：akari)
 
-### 🛸 穿越后的初始装备清单
+Telegram: [@LeagueAkari](https://t.me/leagueakari)
 
-- [x] 兔耳发卡（耐久度：∞）
-- [x] 魔法棒棒糖 ×3
-- [ ] 正常人的常识
-- [ ] 物理法则遵守手册
+阿卡日是基于 GPL-3.0 许可证的开源软件。
 
-![装备示意图](https://placehold.co/600x400?text=Rabbit+Girl+Arsenal)
+阿卡日完全免费，没有任何付费功能。如果您通过任何渠道购买了本软件，那真的 house。
 
----
+如果您支持本项目，请在 GitHub 上给它一个 Star ❤️。
 
-## 🤯 第二章：魔王城の下午茶时间
+# Part 2：复杂文档
 
-两人掉进了魔王城的点心仓库，此时属性面板突然弹出：
+## 代码块
 
-| 角色 | HP  | MP  | 特殊技能     |
-| ---- | --- | --- | ------------ |
-| Rabi | ??? | 999 | 呆毛能量炮   |
-| Ribi | 1   | 1   | 绝对逻辑破解 |
+```ts
+import {
+  World,
+  Character,
+  Scene,
+  Dialogue,
+  Expression,
+  Emotion,
+  Outfit,
+  HireContract,
+  MagicStaff,
+  Schedule,
+  EyeContact,
+  ParentBias,
+  TalentAssessment,
+} from "@mushoku/core";
 
-```python
-while True:
-    print("魔王の曲奇饼×" + str(random.randint(100,999)))
+const world = World.load("greyrat-village");
+const home = world.place("GreyratHouse");
+
+const paul = Character.create("保罗").as("parent").withTrait("knight");
+const zenith = Character.create("塞妮丝").as("parent");
+const rudy = Character.create("鲁迪")
+  .as("child")
+  .age(3)
+  .withTraits("聪明", "早熟")
+  .setSchedule(Schedule.daily().morning("magic").afternoon("sword"));
+
+const roxy = Character.create("洛琪希")
+  .as("tutor")
+  .age(14)
+  .wear(Outfit.MageRobe.brown())
+  .withHair("skyblue", "braided")
+  .withSkin("pale")
+  .withEyes("half-closed")
+  .withExpression(Expression.Cold)
+  .carry(new MagicStaff())
+  .arriveAt(home);
+
+Scene.create(world)
+  .title("家庭教师的到来")
+  .start(() => {
+    const tutorContract = HireContract.propose()
+      .from(home)
+      .toGuild("WizardGuild")
+      .withSalary("standard_noble")
+      .targetRole("tutor");
+
+    const result = tutorContract.fulfillWith(roxy);
+    if (!result.success) return;
+
+    home.accept(roxy);
+    roxy.speak("我叫洛琪希，请多指教。");
+
+    paul.freeze();
+    zenith.freeze();
+    home.react("惊讶");
+
+    rudy.narrate(`
+      萝莉、没好气的半眯眼、冷淡的态度。
+      凑齐三个要素的她很完美。
+      请务必成为我老婆。
+    `);
+
+    rudy.makeEyeContactWith(roxy);
+    rudy.say("看起来很小。");
+
+    roxy.emote(Emotion.Annoyed);
+    roxy.say("你没有资格说我小。");
+
+    roxy.lookAround();
+    roxy.ask("我要教导的学生在哪里？");
+
+    zenith.hold(rudy);
+    zenith.say("啊，就是这孩子。");
+    rudy.wink("right");
+
+    roxy.widenEyes();
+    roxy.sigh();
+    roxy.murmur("唉……偶尔就是会有这种人呢……");
+    roxy.comment(
+      "只不过是成长稍微快了一点，就认定自己小孩很有才能的笨蛋父母……"
+    );
+
+    rudy.narrate("我听得到喔！不过算了，我也非常同意这句评论。");
+
+    zenith.ask("有什么问题吗？");
+
+    roxy.assess(
+      TalentAssessment.create(rudy).forSubject("magic").result("不乐观")
+    );
+    roxy.say("我并不认为令郎可以理解魔术的理论。");
+
+    zenith.defendWith(ParentBias.high());
+    zenith.say("没问题，我们家的小鲁迪非常优秀！");
+
+    roxy.sigh();
+    roxy.say("唉……我明白了，我就尽力而为吧。");
+
+    Schedule.assign(roxy, {
+      daily: {
+        morning: "teachMagic",
+        afternoon: "studyTheory",
+      },
+    });
+
+    rudy.startLessonWith(roxy);
+    rudy.startSwordTrainingWith(paul);
+  });
 ```
 
-突然警报大作！<mark>守卫机械龙</mark>破墙而入：
+## 长文本 + HTML
 
-> 「检测到非法甜品摄入！启动<u>强制甜蜜净化程序</u>！」
+<style>
+  section.genshin-quotes {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    padding: 2em;
+    border-radius: 12px;
+    line-height: 1.8;
+  }
+  .quote-card {
+    border: 1px solid #333;
+    background: #2c2c2c;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    border-radius: 8px;
+  }
+  .character-name {
+    color: #82aaff;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  blockquote {
+    margin: 0;
+    padding-left: 1em;
+    border-left: 3px solid #555;
+    font-style: italic;
+  }
+  .element-anemo { color: #56c7c7; }
+  .element-pyro { color: #ff6b6b; }
+  .element-cryo { color: #6bcfff; }
+  .element-electro { color: #d085ff; }
+  .element-geo { color: #f2c97d; }
+  .element-hydro { color: #67d5e3; }
+  .element-dendro { color: #a5d66a; }
+</style>
 
----
+<section class="genshin-quotes">
 
-## 🎮 战斗阶段！代码对决
+<div class="quote-card">
+  <div class="character-name element-electro">雷电将军（Raiden Shogun）</div>
+  <blockquote>
+    「愿此刻永恒。」<br>
+    「人的愿望是永不停歇的洪流，想要给予其形体，并赋予其‘永恒’，也许正是神的职责吧。」
+  </blockquote>
+</div>
 
-Ribi 快速敲击虚空键盘：
+<div class="quote-card">
+  <div class="character-name element-anemo">温迪（Venti）</div>
+  <blockquote>
+    「风带来了故事的种子，时间会让它发芽。」<br>
+    「我不是谁的神，只是风而已，恰巧经过你心中的那阵风。」
+  </blockquote>
+</div>
 
-```javascript
-const attack = () => {
-  let damage = Math.random() * 100 + '🍰'
-  console.log(`Ribi发动【蛋糕溢出攻击】造成 ${damage} 点伤害！`)
-}
-```
+<div class="quote-card">
+  <div class="character-name element-geo">钟离（Zhongli）</div>
+  <blockquote>
+    「人间烟火，风花雪月，终归尘土。但契约，永恒不变。」<br>
+    「万物皆有其代价，契约也不例外。」
+  </blockquote>
+</div>
 
-Rabi 则摆出经典 pose：
-![战斗画面](https://placehold.co/800x600?text=Magical+Girl+Transformation)
+<div class="quote-card">
+  <div class="character-name element-pyro">胡桃（Hu Tao）</div>
+  <blockquote>
+    「人生苦短，来点儿甜的吧！」<br>
+    「生死有命，富贵在天，但我负责超度～嘻嘻。」
+  </blockquote>
+</div>
 
----
+<div class="quote-card">
+  <div class="character-name element-hydro">夜兰（Yelan）</div>
+  <blockquote>
+    「信息，是胜利的钥匙。情报的掌控者，才是黑暗中的王者。」<br>
+    「就算你隐藏再深，也终究逃不过我的眼睛。」
+  </blockquote>
+</div>
 
-## 🎉 结局：世界线收束
+<div class="quote-card">
+  <div class="character-name element-cryo">神里绫华（Kamisato Ayaka）</div>
+  <blockquote>
+    「雪落无声，心念无痕。正如我剑下无情，却心系人间。」<br>
+    「有礼、有节、有义，才能有力。」
+  </blockquote>
+</div>
 
-经过~~完全不符合物理法则~~的战斗，两人发现：
+<div class="quote-card">
+  <div class="character-name element-dendro">纳西妲（Nahida）</div>
+  <blockquote>
+    「知识是美好的，但智慧，是温柔的力量。」<br>
+    「人不是为知识而活，而是为了活着而学习。」
+  </blockquote>
+</div>
 
-1. 魔王其实是
-   - 平行世界的
-     - 奶茶成精的
-       - 自家班主任
+<div class="quote-card">
+  <div class="character-name element-anemo">枫原万叶（Kazuha）</div>
+  <blockquote>
+    「我心向风，便随风而去。」<br>
+    「人如浮叶，心似游云，不问世间沉浮。」
+  </blockquote>
+</div>
 
-最终 BOSS 战以<ruby>奶茶<rt>ミルクティー</rt></ruby>洪流淹没整个大陆告终...
-
----
-
-<blockquote style="color: #ff69b4">
-<h3>📢 系统公告</h3>
-由于主要角色<a href="javascript:void(0)">Rabi</a>和<a href="javascript:void(0)">Ribi</a>的乱入<br>
-本季动画提前完结，<del>续篇制作决定</del>
-</blockquote>
-
-###### 本故事最终解释权归 <kbd>世界意志</kbd> 所有
+</section>
