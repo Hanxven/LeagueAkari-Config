@@ -1,0 +1,16 @@
+{
+  "templates": [
+    {
+      "name": "找出藏战绩玩家",
+      "type": "ongoing-game",
+      "version": 10,
+      "url": "https://raw.githubusercontent.com/LeagueAkari/LeagueAkari-Config/refs/heads/main/config/in-game-send/templates/privacy-checker.js"
+    },
+    {
+      "name": "开黑情况分析",
+      "type": "ongoing-game",
+      "version": 10,
+      "url": "https://raw.githubusercontent.com/LeagueAkari/LeagueAkari-Config/refs/heads/main/config/in-game-send/templates/premade-checker.js"
+    }
+  ]
+}
