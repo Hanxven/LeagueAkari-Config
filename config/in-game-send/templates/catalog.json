@@ -1,18 +1,21 @@
 {
   "templates": [
     {
+      "id": "privacy-checker",
       "name": "找出藏战绩玩家",
       "type": "ongoing-game",
       "version": 10,
       "path": "/config/in-game-send/templates/privacy-checker.js"
     },
     {
+      "id": "premade-checker",
       "name": "开黑情况分析",
       "type": "ongoing-game",
       "version": 10,
       "path": "/config/in-game-send/templates/premade-checker.js"
     },
     {
+      "id": "lol-prophet",
       "name": "马",
       "type": "ongoing-game",
       "version": 10,
