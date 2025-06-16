@@ -6,7 +6,7 @@
       "type": "ongoing-game",
       "version": 10,
       "path": "/config/in-game-send/templates/privacy-checker.js",
-      "description": ""
+      "description": "君子坦蕩蕩，小人長戚戚。"
     },
     {
       "id": "premade-checker",
@@ -14,7 +14,7 @@
       "type": "ongoing-game",
       "version": 10,
       "path": "/config/in-game-send/templates/premade-checker.js",
-      "description": ""
+      "description": "君子周而不比，小人比而不周。"
     },
     {
       "id": "lol-prophet-1",
