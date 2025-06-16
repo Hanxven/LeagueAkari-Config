@@ -2,24 +2,27 @@
   "templates": [
     {
       "id": "privacy-checker",
-      "name": "找出藏战绩玩家",
+      "name": "生涯隐藏标注",
       "type": "ongoing-game",
       "version": 10,
-      "path": "/config/in-game-send/templates/privacy-checker.js"
+      "path": "/config/in-game-send/templates/privacy-checker.js",
+      "description": ""
     },
     {
       "id": "premade-checker",
-      "name": "开黑情况分析",
+      "name": "开黑小队标注",
       "type": "ongoing-game",
       "version": 10,
-      "path": "/config/in-game-send/templates/premade-checker.js"
+      "path": "/config/in-game-send/templates/premade-checker.js",
+      "description": ""
     },
     {
-      "id": "lol-prophet",
-      "name": "马",
+      "id": "lol-prophet-1",
+      "name": "馬説",
       "type": "ongoing-game",
       "version": 10,
-      "path": "/config/in-game-send/templates/lol-prophet.js"
+      "path": "/config/in-game-send/templates/lol-prophet.js",
+      "description": "千里馬常有，而伯樂不常有。故雖有名馬，祇辱於奴隸人之手，駢死于槽枥之間，不以千里稱也。"
     }
   ]
 }
