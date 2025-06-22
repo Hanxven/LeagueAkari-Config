@@ -1,14 +1,12 @@
-## 测试：特殊链接
-
-[触发一些特殊行为](akari://renderer-link/overlays/release-modal)
-
 ## Akari 公告
 
 偶尔来看看，或许你会获得一些有用的信息。
 
+v1.3.6 已发布，[查看更新内容](akari://renderer-link/overlays/release-modal)。
+
 ---
 
-### 千万注意！
+### 千万注意！尤其是上个版本的用户
 
 1. 如果你使用 **卡莎** 的 **「联盟不朽 卡莎」** 作为背景图片……
 2. **请不要再** 使用 **ID 以 `6b817ce1-aac3-…` 开头** 的装饰！
@@ -28,7 +26,7 @@
 
 它是**免费**、**开源**的，许可证是 GPL-3.0。
 
-如果你花钱从某个付费的渠道（倒卖、套壳等）获取了此软件……请务必通知我们，我们会开瓶<span class="flow-gradient-text-9e2b3c0b">🥂香槟</span>祝贺。
+如果你花钱从某个付费的渠道（倒卖、套壳等）获取了此软件……请务必通知我们，我们会开瓶<span class="flow-gradient-text-9e2b3c0b">🥂 香槟</span>祝贺，另外别忘了去退款。
 
 觉得这个项目不错？去 [GitHub](https://github.com/LeagueAkari/LeagueAkari) 免费点颗 ⭐，以支持我们继续开发。
 
