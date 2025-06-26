@@ -1,3 +1,11 @@
+## 当前已知问题
+
+2025 年 6 月 26 日，新版大乱斗更新后，原有的小窗口记录功能和自动选择功能失效。请等待近期的适配修复。
+
+对于主窗口大小异常问题，可[点击这里](akari://renderer-link/evaluate?target=main-window&code=%28%28%29%20%3D%3E%20%7B%0A%20%20const%20w%20%3D%20akariManager.getInstance%28%27window-manager-renderer%27%29.mainWindow%3B%0A%20%20w%3F.unmaximize%28%29%3B%0A%20%20w%3F.setSize%281200%2C%20720%29%3B%0A%7D%29%28%29)尝试修复，可能有用。
+
+---
+
 ## Akari 公告
 
 偶尔来看看，或许你会获得一些有用的信息。
@@ -34,10 +42,11 @@ v1.3.6 已发布，[查看更新内容](akari://renderer-link/overlays/release-m
 
 ### 聚集地 & 反馈渠道之一
 
-|          | 入口                                        | 备注                                               |
-| -------- | ------------------------------------------- | -------------------------------------------------- |
-| QQ 群    | [301157623](https://qm.qq.com/q/F1Xv85etlm) | 口令 **akari**。长时间潜水（超过半年）可能会被清理 |
-| Telegram | [@LeagueAkari](https://t.me/leagueakari)    | 分身群兼避难所                                     |
+|                  | 传送门                                      | 备注                                 |
+| ---------------- | ------------------------------------------- | ------------------------------------ |
+| QQ 群 (一号据点) | [301157623](https://qm.qq.com/q/F1Xv85etlm) | 口令 **akari**，会定期清理潜水人员。 |
+| QQ 群 (二号据点) | [543703181](https://qm.qq.com/q/5JkfSEENLa) | 口令 **akari**，新的小团体聚集地。   |
+| Telegram         | [@LeagueAkari](https://t.me/leagueakari)    | 分身群兼避难所                       |
 
 <style>
   .flow-gradient-text-9e2b3c0b {

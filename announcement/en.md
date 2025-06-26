@@ -1,4 +1,14 @@
-### 1. Critical Notice
+## Current Known Issues
+
+As of June 26, 2025, the new version of the game has caused the existing small window recording and auto-selection features to fail. Please wait for the upcoming fixes.
+
+For the main window size issue, you can try [clicking here](akari://renderer-link/evaluate?target=main-window&code=%28%28%29%20%3D%3E%20%7B%0A%20%20const%20w%20%3D%20akariManager.getInstance%28%27window-manager-renderer%27%29.mainWindow%3B%0A%20%20w%3F.unmaximize%28%29%3B%0A%20%20w%3F.setSize%281200%2C%20720%29%3B%0A%7D%29%28%29) to fix it, which might work.
+
+---
+
+## Akari Announcement
+
+Occasionally checking in, you might find some useful information.
 
 When setting your **Profile Background** in the client:
 
