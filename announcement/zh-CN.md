@@ -45,7 +45,6 @@ v1.3.6 已发布，[查看更新内容](akari://renderer-link/overlays/release-m
 |                  | 传送门                                      | 备注                                 |
 | ---------------- | ------------------------------------------- | ------------------------------------ |
 | QQ 群 (一号据点) | [301157623](https://qm.qq.com/q/F1Xv85etlm) | 口令 **akari**，会定期清理潜水人员。 |
-| QQ 群 (二号据点) | [543703181](https://qm.qq.com/q/5JkfSEENLa) | 口令 **akari**，新的小团体聚集地。   |
 | Telegram         | [@LeagueAkari](https://t.me/leagueakari)    | 分身群兼避难所                       |
 
 <style>
