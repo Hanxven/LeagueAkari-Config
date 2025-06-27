@@ -1,4 +1,6 @@
-## Current Known Issues
+## Current Known Issues (New)
+
+The exported settings file cannot be read properly. Please wait for the upcoming fixes.
 
 As of June 26, 2025, the new version of the game has caused the existing small window recording and auto-selection features to fail. Please wait for the upcoming fixes.
 
