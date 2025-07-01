@@ -1,3 +1,7 @@
+---
+alertLevel: high
+---
+
 ## Current Known Issues (New)
 
 The exported settings file cannot be read properly. Please wait for the upcoming fixes.
