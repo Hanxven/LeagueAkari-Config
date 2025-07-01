@@ -42,7 +42,7 @@ function getMessages(env) {
 
       const soloDeathGames = env.matchHistory[s.puuid].data
         .map((g) => stats.games[g.gameId]?.soloDeaths)
-        .filter((g) => g !== null)
+        .filter((g) => Boolean(g))
 
       const totalDeaths = soloDeathGames.reduce((acc, g) => acc + g.length, 0)
 
