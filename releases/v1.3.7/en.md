@@ -1,6 +1,6 @@
-# v1.3.7 (2025-07-05)
+# v1.3.7 (2025-07-06)
 
-This is the v1.3.7 update, released on 2025-07-05.
+This is the v1.3.7 update, released on 2025-07-06.
 
 This release is primarily focused on bug fixes.
 
